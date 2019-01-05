@@ -21,11 +21,13 @@ public class TwtrSearchItem {
 	private Date lastActyTS;
 	private String lastDesc;
 	private String lastPrcsName;
-	//private List<ActivityItem> activity;
-	
-	public TwtrSearchItem(Date reqTS, String searchKey, String reqUsr, String searchType, boolean isAvailable,
-			String lastStatus1, String lastStatus2, Date lastActyTS, String lastDesc, String lastPrcsName) {
+	private List<ActivityItem> activity;
+		
+	public TwtrSearchItem(Date reqTS, String searchKey, String reqUsr, String searchType,
+			boolean isAvailable, String lastStatus1, String lastStatus2, Date lastActyTS, String lastDesc,
+			String lastPrcsName, List<ActivityItem> activity) {
 		super();
+		this.id = id;
 		this.reqTS = reqTS;
 		this.searchKey = searchKey;
 		this.reqUsr = reqUsr;
@@ -36,6 +38,7 @@ public class TwtrSearchItem {
 		this.lastActyTS = lastActyTS;
 		this.lastDesc = lastDesc;
 		this.lastPrcsName = lastPrcsName;
+		this.activity = activity;
 	}
 	
 	public String getId() {
@@ -105,12 +108,20 @@ public class TwtrSearchItem {
 		this.lastPrcsName = lastPrcsName;
 	}
 	
+	public List<ActivityItem> getActivity() {
+		return activity;
+	}
+
+	public void setActivity(List<ActivityItem> activity) {
+		this.activity = activity;
+	}
+
 	@Override
 	public String toString() {
 		return "TwtrSearchItem [id=" + id + ", reqTS=" + reqTS + ", searchKey=" + searchKey + ", reqUsr=" + reqUsr
 				+ ", searchType=" + searchType + ", isAvailable=" + isAvailable + ", lastStatus1=" + lastStatus1
 				+ ", lastStatus2=" + lastStatus2 + ", lastActyTS=" + lastActyTS + ", lastDesc=" + lastDesc
-				+ ", lastPrcsName=" + lastPrcsName + "]";
+				+ ", lastPrcsName=" + lastPrcsName + ", activity=" + activity + "]";
 	}
 	
 	

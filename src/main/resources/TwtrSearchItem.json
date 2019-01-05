@@ -1,0 +1,29 @@
+[{       
+	"reqTS" : ISODate("2019-01-05T13:23:09.159Z"),
+	"searchKey" : "key2",
+	"reqUsr" : "user2",
+	"searchType" : "htg",
+	"isAvailable" : false,
+	"lastStatus1" : "Data-Collection",
+	"lastStatus2" : "Completed",
+	"lastActyTS" : ISODate("2019-01-05T13:23:09.159Z"),
+	"lastDesc" : "Seach initiated",
+	"lastPrcsName" : "Driver",
+	"activity" : [
+			{
+					"actyTS" : ISODate("2019-01-05T13:23:09.159Z"),
+					"status1" : "Initiated",
+					"status2" : "Pending-Processing",
+					"desc" : "Seach initiated",
+					"prcsName" : "Driver"
+			},
+			{
+					"actyTS" : ISODate("2019-01-05T13:23:09.334Z"),
+					"status1" : "Data-Collection",
+					"status2" : "Completed",
+					"desc" : "HT search completed",
+					"prcsName" : "Driver"
+			}
+	],
+	"_class" : "com.sba.mongo.entities.TwtrSearchItem"
+}]
